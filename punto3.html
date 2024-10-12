@@ -6,13 +6,13 @@
     <title>Punto 3</title>
     <style>
         body{
-            background:radial-gradient(rgba(255, 255, 0, 0.845), rgb(255, 255, 255), rgba(0, 255, 255, 0.562));
+            background-color: greenyellow;
             
         }
 
 
         .resaltado {
-                color: rgb(0, 255, 183);
+                color: red;
                 font-weight: bold;
                 text-decoration: line-through;
 
@@ -33,21 +33,25 @@
     <button onclick="AgregarTarea()">Añadir</button>
     <div id="lista"><ol id="lista de Tareas"></ol></div>
     <script>
-        function AgregarTarea() {
-            let lista_tarea = document.getElementById('lista');
-            var texto = document.getElementById('nuevaTarea');
-            if(texto !== ""){
-                const nuevaTarea = document.createElement("li");
-                
-                nuevaTarea.addEventListener("click", function(){
-            lista.classList.toggle('resaltado')}); 
-            nuevaTarea.textContent = texto.value; 
-            lista.appendChild(nuevaTarea);
-            texto.value="";
-            }else{
-                alert("Escribi una tarea, que no escribiste nada");
-            }
-        }
+       function AgregarTarea() {
+    let lista = document.getElementById('lista').querySelector('ol'); 
+    var texto = document.getElementById('nuevaTarea');
+    
+    if (texto.value !== "") {
+        const nuevaTarea = document.createElement("li");
+
+        nuevaTarea.addEventListener("click", function() {
+            nuevaTarea.classList.toggle('resaltado'); 
+        });
+        
+        nuevaTarea.textContent = texto.value; 
+        lista.appendChild(nuevaTarea);
+        texto.value = "";
+    } else {
+        alert("Escribi una tarea, que no escribiste nada");
+    }
+}
+
     </script>
     <br>
     </body>
