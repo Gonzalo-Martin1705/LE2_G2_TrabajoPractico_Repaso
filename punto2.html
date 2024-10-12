@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Punto 2
+    </title>
+    <style>
+        body{
+            text-align: center;
+            background:radial-gradient(rgba(15, 124, 78, 0.123), rgba(0, 255, 255, 1), rgba(167, 61, 61, 0.562));
+            
+        }
+        .Formulario{
+            border: 1px solid #9e1111;
+            border-radius: 5px;
+            font-size: 16px;
+            padding: 10px;
+                  
+        }
+    </style>
+</head>
+<body>
+    <div class="Formulario">
+        <h1>Formulario</h1>
+        <form action="punto2.html" method="GET">
+            <h4>Nombre completo: <input type="text" id="Nombre completo" name="Nombre completo" placeholder="Nombre completo" required minlength="3" maxlength="25"></h4>
+            <br>
+            <h4>Email: <input type="mail" id="Email" name="Gmail" placeholder="tugmail@gmail.com" required minlength="10" maxlength="34"></h4>
+            <br>
+            <h4>Contraseña: <input type="password" id="password" placeholder="pon la Contraseña del Email" name="password" required></h4>
+            <br>
+            <h4>Cualidades: <textarea id="comentarios" name="comentarios" rows="2" cols="30" placeholder="Escribe aquí tus Cualidades"></textarea></h4>
+            <br>
+            <h4>Fecha de nacimiento:  <input type="date" id="Fecha" name="Fecha"></h4>
+            <br>
+            <h4>Que actividad realizas: <br>
+                <input type="radio" name="ACTIVIDAD" value="Deportes"> Deportes<br>
+                <input type="radio" name="ACTIVIDAD" value="Actividad Academica"> Actividad Academica<br>
+                <input type="radio" name="ACTIVIDAD" value="Actividad artisticas"> Actividad artisticas<br>
+                <input type="radio" name="ACTIVIDAD" value="Actividad culinaria"> Actividad culinaria <br>
+                <input type="radio" name="ACTIVIDAD" value="Otro">Otro <br>
+            </h4>
+            <h4>Genero: <br>
+                <input type="radio" name="Genero" value="Masculino">Masculino <br>
+                <input type="radio" name="Genero" value=" Femenino"> Femenino <br>
+                <input type="radio" name="Genero" value="Otro">Otro  <br>
+            </h4>
+            <br>
+
+            <button type="submit">Registrarte</button>
+            <button type="reset">Reinciar</button>
+        </form>
+
+    </div>
+
+</body>
+</html>

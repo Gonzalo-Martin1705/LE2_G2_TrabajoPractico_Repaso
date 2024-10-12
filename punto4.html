@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>punto 4</title>
+</head><body>
+    <input type="button" id="button" value="Sumar" onclick="sumar();">
+    <input type="button" id="button" value="restar" onclick="restar();">
+    <input type="button" id="button" value="dividir" onclick="dividir();">
+    <input type="button" id="button" value="multiplicar" onclick="multiplicar();">
+    <script>
+        
+        function sumar(){      
+        var n1= document.getElementById('n1').value; 
+        var n2= document.getElementById('n2').value;  
+        let sum= parseInt(num1) + parseInt(num1);
+        console.log('el resultado es:'+ sum);
+        return sumar;
+        }
+        function restar(){
+        var n1= document.getElementById('n1'); 
+        var n2= document.getElementById('n2');
+            let rest = parseInt(num1) - parseInt(num1);
+            console.log('el resultado es:'+ rest);
+            return restar;
+        }
+        function dividir(){
+        var n1= document.getElementById('n1').value; 
+        var n2= document.getElementById('n2').value;
+            let divid = parseFloat(num1) / parseFloat(num1);
+            console.log('el resultado es:'+ divid);
+            return divid;
+        }
+        function multiplicar(){
+        var n1= document.getElementById('n1').value; 
+        var n2= document.getElementById('n2').value;
+            let product = parseInt(num1) * parseInt(num1);
+            console.log('el resultado es:'+ product);
+            return product;
+        }
+        
+        </Script>
+
+
+</body>
+</html>

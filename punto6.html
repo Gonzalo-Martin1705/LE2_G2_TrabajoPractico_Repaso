@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto 6</title>
+    <style>
+        .led {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 10px;
+            background-color: rgb(0, 0, 0); /* Color inicial: negro (apagado) */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="led_rojo" class="led"></div>
+    <br>
+    <h4>Regular Brillo:</h4>
+    <h5>Brillo 1</h5>
+<script>
+        function ajustarBrillo() {
+            // Obtener los valores de los deslizadores
+            let brillo1 = document.getElementById('brillo1').value;
+
+            // Obtener el LED
+            let led = document.getElementById('led_rojo');
+
+            // Cambiar el color de fondo del LED basado en los valores de los deslizadores
+            led.style.backgroundColor = 'rgb(' + brillo1 + ', 0,0)';
+        }
+    </script>
+</body>
+</html>
