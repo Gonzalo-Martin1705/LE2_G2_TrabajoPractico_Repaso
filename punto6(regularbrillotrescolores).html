@@ -11,7 +11,7 @@
             border-radius: 50%;
             display: inline-block;
             margin: 10px;
-            background-color: rgb(0, 0, 0); /* Color inicial: negro (apagado) */
+            background-color: rgb(0, 0, 0); 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             cursor: pointer;
         }
@@ -32,15 +32,14 @@
 
     <script>
         function ajustarBrillo() {
-            // Obtener los valores de los deslizadores
+          
             let brillo1 = document.getElementById('brillo1').value;
             let brillo2 = document.getElementById('brillo2').value;
             let brillo3 = document.getElementById('brillo3').value;
 
-            // Obtener el LED
             let led = document.getElementById('led_rojo');
 
-            // Cambiar el color de fondo del LED basado en los valores de los deslizadores
+          
             led.style.backgroundColor = 'rgb(' + brillo1 + ', ' + brillo2 + ', ' + brillo3 + ')';
         }
     </script>
