@@ -9,35 +9,40 @@
     <input type="button" id="button" value="restar" onclick="restar();">
     <input type="button" id="button" value="dividir" onclick="dividir();">
     <input type="button" id="button" value="multiplicar" onclick="multiplicar();">
+    <p id="resultado"></p>
     <script>
         
         function sumar(){      
         var n1= document.getElementById('n1').value; 
         var n2= document.getElementById('n2').value;  
-        let sum= parseInt(num1) + parseInt(num1);
-        console.log('el resultado es:'+ sum);
-        return sumar;
-        }
+        let sum= parseInt(n1) + parseInt(n2);
+        document.getElementById('resultado'+ sum);
+    }
         function restar(){
         var n1= document.getElementById('n1'); 
         var n2= document.getElementById('n2');
-            let rest = parseInt(num1) - parseInt(num1);
-            console.log('el resultado es:'+ rest);
-            return restar;
+            let rest = parseInt(n1) - parseInt(n2);
+            document.getElementById('resultado'+ rest);
+
         }
         function dividir(){
         var n1= document.getElementById('n1').value; 
         var n2= document.getElementById('n2').value;
-            let divid = parseFloat(num1) / parseFloat(num1);
-            console.log('el resultado es:'+ divid);
-            return divid;
+        if((n2 != 0)&&(n1!=0)){
+            let divid = parseFloat(n1) / parseFloat(n2);
+            document.getElementById('resultado'+ divid);
+
+        }else{
+            console.log("Error")
+
+        }
         }
         function multiplicar(){
         var n1= document.getElementById('n1').value; 
         var n2= document.getElementById('n2').value;
-            let product = parseInt(num1) * parseInt(num1);
-            console.log('el resultado es:'+ product);
-            return product;
+            let product = parseInt(n1) * parseInt(n2);
+            document.getElementById('resultado'+ product);
+
         }
         
         </Script>
