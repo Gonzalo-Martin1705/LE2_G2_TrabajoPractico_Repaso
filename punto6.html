@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Punto 6</title>
+    <title>punto 6</title>
     <style>
         .led {
             width: 50px;
@@ -21,19 +21,19 @@
     <div id="led_rojo" class="led"></div>
     <br>
     <h4>Regular Brillo:</h4>
-    <h5>Brillo :</h5>
-        <input type="range" id="brillo1" min="0" max="255" value="128" oninput="ajustarBrillo()">
+    <h5>brillo</h5>
+    <input type="range" id="brillo" min="0" max="255" value="128" oninput="ajustarBrillo()">
 
-<script>
+    <script>
         function ajustarBrillo() {
             // Obtener los valores de los deslizadores
-            let brillo1 = document.getElementById('brillo1').value;
+            let brillo = document.getElementById('brillo').value;
 
             // Obtener el LED
             let led = document.getElementById('led_rojo');
 
             // Cambiar el color de fondo del LED basado en los valores de los deslizadores
-            led.style.backgroundColor = 'rgb(' + brillo1 + ', 0,0)';
+            led.style.backgroundColor = 'rgb(' + brillo + ', 0,0)';
         }
     </script>
 </body>
