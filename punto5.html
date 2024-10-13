@@ -11,7 +11,7 @@
             border-radius: 50%;
             display: inline-block;
             margin: 10px;
-            background-color: #ccc; /* Color apagado */
+            background-color: #ccc; 
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             cursor: pointer;
         }
@@ -34,12 +34,12 @@
         function LedEncendido(ledId, color) {
             let led = document.getElementById(ledId);
 
-            // Comprobar si el color actual es el color apagado
+
             if (led.style.backgroundColor === 'rgb(204, 204, 204)') {
-                led.style.backgroundColor = color; // Encender
+                led.style.backgroundColor = color; 
                 console.log("El LED " + color + " se encendió");
             } else {
-                led.style.backgroundColor = '#ccc'; // Apagar
+                led.style.backgroundColor = '#ccc'; 
                 console.log("El LED " + color + " se apagó");
             }
         }
